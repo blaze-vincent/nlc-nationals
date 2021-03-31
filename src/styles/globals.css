@@ -1,5 +1,6 @@
 :root {
-  --bg: rgb(14,0,56);
+  --bg: rgb(19, 1, 74);
+  --highlight: rgb(14,0,56);
   font-size: 16px;
 }
 
@@ -12,6 +13,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   width: 100%;
   height: 100%;
+  background-color: var(--bg);
+  color: white;
 }
 
 #__next {
