@@ -1,4 +1,9 @@
+import { useState } from "react"
+
 export default function SectionPreviewScroller(props){
+
+    const [sectionDisplayed, setSectionDisplayed] = useState(0);
+
     return (<div className="section-preview-scroller">
         <style jsx>{`
             .section-preview-scroller {
@@ -26,7 +31,7 @@ export default function SectionPreviewScroller(props){
                 margin: 0.25rem;
             }
             .selected {
-                background: var(--highlight);
+                background-color: #555;
                 border: 2px solid white;
             }
             .wrapper {
@@ -35,16 +40,24 @@ export default function SectionPreviewScroller(props){
                 width: 100%;
                 bottom: 0;
                 left: 0;
-                margin-bottom: 1rem;
+                padding-bottom: 0.75rem;
+                padding-top: 0.25rem;
+                opacity: 0.75;
             }
         `}</style>
         {
-            props.sections[0]
+            props.sections[sectionDisplayed]
         }
         <div className="wrapper">
             <div className="horizontal">
                 {
-                    Array(props.sections.length).fill(<button className="" />)
+                    Array(props.sections.length).fill(0).map((button, index) => {
+                        return (<button 
+                                    className={sectionDisplayed === index ? "selected" : ""} 
+                                    onClick={ e => { setSectionDisplayed(index) }}
+                                    onTap={ e => { setSectionDisplayed(index) }} 
+                                />)
+                    })
                 }
             </div>
         </div>

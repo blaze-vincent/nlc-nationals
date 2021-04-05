@@ -7,9 +7,9 @@ import GotoTop from './gotoTop';
 
 export default function Navbar(props){
 
-    const eventLinks = [ {name: "2021", dest: ""}, {name: "Policies", dest: ""} ]
-    const aboutLinks = [ {name: "This site", dest: ""}, {name: "BPA", dest: ""}, {name: "NLC", dest: ""} ]
-    const orlandoLinks = [ {name: "Leisure", dest: ""}, {name: "Travel", dest: ""}, {name: "Food", dest: ""} ]
+    const eventLinks = [ {name: "2021", dest: "/2021"}, {name: "Policies", dest: "/policies"} ]
+    const orlandoLinks = [ {name: "Leisure", dest: "/leisure"}, {name: "Travel", dest: "/travel"}, {name: "Food", dest: "/food"} ]
+    const aboutLinks = [ {name: "This site", dest: "/about-site"}, {name: "BPA", dest: "/bpa"}, {name: "NLC", dest: "/about-nlc"} ]
 
     //determine sreen width on first render, update on resize
     const [windowWidth, setWindowWidth] = useState(NaN);
@@ -93,8 +93,8 @@ export default function Navbar(props){
             windowWidth ? windowWidth > 600 ? (
                 <div className="horizontal">
                     <NavbarItemCollapsible title="Event" links={eventLinks}/>
-                    <NavbarItemCollapsible title="About" links={aboutLinks}/>
                     <NavbarItemCollapsible title="Orlando" links={orlandoLinks}/>
+                    <NavbarItemCollapsible title="About" links={aboutLinks}/>
                 </div>
             ) : <HamburgerMenu sections={[{title: "Event", links: eventLinks}, {title: "About", links: aboutLinks}, {title: "Orlando", links: orlandoLinks}]} /> : ""
         }
