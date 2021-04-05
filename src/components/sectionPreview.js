@@ -36,45 +36,51 @@ export default function SectionPreview(props){
                 width: 90vw;
                 max-width: 60rem;
                 height: 70vw;
-                max-height: 40rem;
+                max-height: 35rem;
                 background-color: white;
                 overflow-x: hidden;
                 overflow-y: hidden;
                 object-fit: contain;
-                margin-bottom: 1rem;
-                border-radius: 0.5rem;
                 border: 3px solid var(--bg);
+                border-radius: 0.4rem;
+                background-color: var(--bg);
             }
             img {
                 height: inherit;
-                width: 103%;
+                width: 100%;
             }
             .preview-overlay {
                 transition: 0.25s;
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 90vw;
-                max-width: 60rem;
-                height: 70vw;
-                max-height: 40rem;
+                width: inherit;
+                max-width: inherit;
+                height: inherit;
+                max-height: inherit;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 opacity: 0;
-                background-color: black;
+                background-color: var(--highlight);
             }
             .displayed {
-                opacity: 0.5;
+                opacity: 0.75;
             }
             .overlay-text {
                 position: absolute;
                 display: block;
                 height: max-content;
                 width: max-content;
-                bottom: 1rem;
-                left: 1rem;
-                max-width: 20rem;
+                bottom: 3rem;
+                margin: auto;
+                max-width: 60%;
+            }
+            @media (max-width: 20rem){
+                .overlay-text {
+                    left: 1rem;
+                    max-width: 15rem;
+                }
             }
             h4 {
                 margin: 0;

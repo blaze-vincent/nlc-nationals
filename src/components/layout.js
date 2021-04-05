@@ -8,7 +8,8 @@ export default function Layout(props){
         <style jsx>{`
             #layout {
                 width: inherit;
-                height: inherit;
+                height: max-content;
+                min-height: 100%;
                 background-color: var(--bg);
                 display: flex;
                 flex-direction: column;

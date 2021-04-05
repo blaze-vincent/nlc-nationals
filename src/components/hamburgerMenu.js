@@ -16,13 +16,14 @@ export default function HamburgerMenu(props){
             .hamburger {
                 margin-left: auto;
                 position: relative;
+                cursor: pointer;
             }
             .expandedMenu {
                 position: fixed;
                 right: 0;
                 background-color: var(--highlight);
                 width: 9rem;
-                top: 8rem;
+                top: 7.7rem;
                 height: 28rem;
                 display: flex;
                 flex-direction: column;
