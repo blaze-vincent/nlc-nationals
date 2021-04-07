@@ -7,7 +7,7 @@ export default function Home() {
   const sectionPreviews = [
     <SectionPreview title="Event" imgUrl="/OrlandoNightSkyline.jpg" links={[ {name: "2021", url: "/2021"}, {name: "Policies", url: "/policies"}]} description="Learn more about the 2021 Fireworks-themed National Leadership Conference." />,
     <SectionPreview title="Orlando" imgUrl="/florida1.jpg" links={[ {name: "Leisure", url: "/leisure"}, {name: "Travel", url: "/travel"}, {name: "Food", url: "/food"}]}  description="See the special airline deals offered to attendants of the 2021 NLC in Orlando as well as things to do once there."/>,
-    <SectionPreview title="About" imgUrl="/florida1.jpg" links={[ {name: "This Site", url: "/about-site"}, {name: "BPA", url: "/bpa"}, {name: "NLC", url: "/about-nlc"}]} description="More information regarding BPA, NLC, and this site." />
+    <SectionPreview title="About" imgUrl="/florida-lake.jpg" links={[ {name: "This Site", url: "/about-site"}, {name: "BPA", url: "/bpa"}, {name: "NLC", url: "/about-nlc"}]} description="More information regarding BPA, NLC, and this site." />
   ]
 
   return (<Layout>

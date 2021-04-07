@@ -96,7 +96,7 @@ export default function Navbar(props){
                     <NavbarItemCollapsible title="Orlando" links={orlandoLinks}/>
                     <NavbarItemCollapsible title="About" links={aboutLinks}/>
                 </div>
-            ) : <HamburgerMenu sections={[{title: "Event", links: eventLinks}, {title: "About", links: aboutLinks}, {title: "Orlando", links: orlandoLinks}]} /> : ""
+            ) : <HamburgerMenu sections={[{title: "Event", links: eventLinks}, {title: "Orlando", links: orlandoLinks}, {title: "About", links: aboutLinks}]} /> : ""
         }
     </div>)
 }

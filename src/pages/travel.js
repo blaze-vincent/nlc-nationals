@@ -15,11 +15,17 @@ export default function Travel(){
         <div className="airlines">
             <h2>Getting to Orlando</h2>
             <div className="attraction">
-                <Attraction url="https://disneyworld.disney.go.com/faq/disney-springs/driving-alternatives/" title="todo" description="add airlines" imgSrc="https://blog-cdn.touringplans.com/blog/wp-content/uploads/2019/02/disneysprings-700x525.jpg" />
+                <Attraction url="https://www.united.com/" title="United" description="United Airlines offers one of the best airline loyalty programs in the nation. MileagePlus has the most ways to earn and use miles of any U.S. travel points program. With no expiration date, you can use your miles to travel to almost anywhere in the world!" imgSrc="https://media.united.com/images/Media%20Database/SDL/homepage/content/future-flight-credit-img@2x.jpg" />
+            </div>
+            <div className="attraction">
+                <Attraction url="https://www.aa.com/homePage.do" title="American" description="American Airlines offers a rewards program known as the AAdvantage program. There are over 1000 ways to earn miles other than flying with them, some of which are regular tasks like dining out. Use those miles for flight upgrades, hotels, and the vacation of your dreams!" imgSrc="https://s21.q4cdn.com/616071541/files/images/newsroom/PR_Thumbs/General/social-American-Airlines-generic-18.jpg" />
+            </div>
+            <div className="attraction">
+                <Attraction url="https://www.delta.com/" title="Delta" description="Delta Airlines offers numerous flying classes to ensure there is a flight for you! With Delta’s loyalty flight program, SkyMiles, every flight you take will lead you to the trip of your dreams!" imgSrc="https://caltechsites-prod.s3.amazonaws.com/procurement70/images/delta_airline.max-1000x1000.jpg" />
             </div>
         </div>
         <div className="inter-orlando">
-            <h2>Within Orlando</h2>
+            <h2>Getting around Orlando</h2>
             <div className="attraction">
                 <Attraction url="https://disneyworld.disney.go.com/faq/disney-springs/driving-alternatives/" title="Foot Traffic" description="A pedestrian bridge facilitates foot travel to Disney Springs Marketplace from the Saratoga resort." imgSrc="https://blog-cdn.touringplans.com/blog/wp-content/uploads/2019/02/disneysprings-700x525.jpg" />
             </div>

@@ -7,6 +7,8 @@ export default function HamburgerMenu(props){
         e.preventDefault();
         setMenuCollapsed(!menuCollapsed);
     }
+    let touchMoving = false;
+    let clicking = false;
     return (<div className="hamburger">
         <style jsx>{`
             svg {
@@ -61,8 +63,10 @@ export default function HamburgerMenu(props){
             viewBox="0 0 100 80" 
             width="40" height="40"  
             fill="white" 
-            onTouchStart={toggleMenuCollapsed}
-            onClick={toggleMenuCollapsed}
+
+            onTouchMove={ e => { touchMoving = true } }
+            onTouchEnd={ e => { if(!touchMoving && !clicking){toggleMenuCollapsed(e); touchMoving = false; clicking = false;}} }
+            onClick={ e => { clicking = true; toggleMenuCollapsed(e); } }
             >
             <rect width="100" height="13"></rect>
             <rect y="30" width="100" height="13"></rect>

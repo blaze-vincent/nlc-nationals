@@ -7,6 +7,7 @@ export default function TwentyTwentyOne(){
             img {
                 width: 30rem;
                 max-width: 80vw;
+                cursor: pointer;
             }
             * {
                 text-align: center;
@@ -22,7 +23,8 @@ export default function TwentyTwentyOne(){
             }
         `}</style>
         <h1>2021 National Leadership Conference</h1>
-        <img src="/fireworks.png"></img>
+        <Link href="https://bpa.org/nlc/"><img src="/fireworks.png" alt="2021 NLC Envision, Empower, Ignite logo."></img></Link>
+        
         <p>The theme of this year's NLC is <b>Envision, Empower, Ignite</b>.</p>
         <p>The event would have taken place in <b>Orlando, Florida</b>, from <b>April 26 - May 9</b></p>
         <p>It will now instead take place entirely virtually on the same dates.</p>

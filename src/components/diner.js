@@ -14,7 +14,8 @@ export default function Diner(props){
                 background-color: var(--highlight);
                 border-radius: 0.25rem;
                 max-width: 35rem;
-                width: 80vw;
+                width: 100vw;
+                margin-top: 1rem;
             }
             .meal {
                 position: relative;
@@ -100,7 +101,7 @@ export default function Diner(props){
             <Link href={props.url || ""}>
                 <h4>{props.title || "sample diner name"}</h4>
             </Link>
-            <p>This restaurant typically charges {props.priceRange || "$-0 - $0"} for a meal.</p>
+            <small>This restaurant typically charges {props.priceRange || "$-0 - $0"} for a meal.</small>
         </div>
     </div>)
 }

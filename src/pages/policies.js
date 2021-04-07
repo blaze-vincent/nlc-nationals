@@ -11,9 +11,15 @@ export default function Policies(){
                 margin-left: 1rem;
                 margin-right: 1rem;
                 max-width: 45rem;
+                width: 90vw;
             }
             li {
                 width: max-content;
+                width: 90vw;
+                max-width: 35rem;
+            }
+            ul {
+                padding: 0;
             }
             h2 {
                 text-decoration: underline;

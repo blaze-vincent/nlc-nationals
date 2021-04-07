@@ -33,21 +33,25 @@ export default function SectionPreview(props){
             .image-preview {
                 position: relative;
                 display: block;
-                width: 90vw;
-                max-width: 60rem;
+                width: 100vw;
+                max-width: 50rem;
                 height: 70vw;
                 max-height: 35rem;
                 background-color: white;
                 overflow-x: hidden;
                 overflow-y: hidden;
-                object-fit: contain;
                 border: 3px solid var(--bg);
                 border-radius: 0.4rem;
                 background-color: var(--bg);
             }
             img {
-                height: inherit;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                object-fit: contain;
+                height: auto;
                 width: 100%;
+                min-width: 100%;
             }
             .preview-overlay {
                 transition: 0.25s;

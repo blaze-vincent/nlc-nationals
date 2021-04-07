@@ -9,6 +9,12 @@ export default function AboutSite(){
             p {
                 margin-right: 1rem; margin-left: 1rem;
                 max-width: 35rem;
+                width: 90vw;
+            }
+            img {
+                max-width: 90vw;
+                border-radius: 0.25rem;
+                background-color: var(--bg);
             }
         `}</style>
         <h1>About This Site</h1>
