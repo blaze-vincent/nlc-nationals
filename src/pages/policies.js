@@ -20,6 +20,7 @@ export default function Policies(){
             }
             ul {
                 padding: 0;
+                list-style-type: none;
             }
             h2 {
                 text-decoration: underline;
